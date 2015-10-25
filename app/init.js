@@ -16,7 +16,3 @@ app.controller("MessageCtrl", function($scope, $firebaseArray) {
 
   // click on `index.html` above to see $remove() and $save() in action
 });
-
-
-
-

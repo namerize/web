@@ -1,9 +1,17 @@
-<html ng-app="namerize">
+<html ng-app="namerize" lang="en" prefix="og: http://ogp.me/ns#">
 	<head>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-		<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
-		<script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
-		<script src="app.js"></script>
+		<!-- meta information -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Namerize" />
+		<meta property="og:title" content="Namerize" />
+		<meta property="og:locale" content="en_GB" />
+
+		<!-- stylesheets -->
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0-rc1/angular-material.min.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic" />
+		<link rel="stylesheet" href="/assets/styles/site.css" />
 	</head>
 
 	<body ng-controller="MessageCtrl">
@@ -22,5 +30,20 @@
 			<input ng-model="newMessageText" />
 			<button type="submit">Add Message</button>
 		</form>
+
+		<!-- javascript library includes -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-resource.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-aria.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0-rc1/angular-material.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/angular-material-icons/0.6.0/angular-material-icons.min.js"></script>
+		<script src="https://cdn.firebase.com/js/client/2.3.1/firebase.js"></script>
+		<script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
+
+		<!-- custom javascript files -->
+		<script src="/app/init.js"></script>
+		<script src="/assets/scripts/site.js"></script>
 	</body>
 </html>
